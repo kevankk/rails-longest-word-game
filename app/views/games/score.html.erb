@@ -1,0 +1,7 @@
+<h1>Games#score</h1>
+<p>Your word: <%= params[:word].upcase unless params[:word].nil? %></p>
+<p> Your word Grid: <%= @letters_string %></p>
+<p><%= @word_grid_valid %></p>
+<p><%= @word_text %></p>
+<p> <%= link_to 'Try Again!', new_path  %>
+<p> Score: <%= @score %> </p>
